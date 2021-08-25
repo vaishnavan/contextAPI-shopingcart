@@ -24,10 +24,11 @@ export default function DisplayCart() {
             <button onClick={() => handleAdd(data)}>+</button>
             <h4>{data.qty}</h4>
             <button onClick={() => handleRemove(data)}>-</button>
+            <p>Total:{data.price - data.price + data.qty * data.price}</p>
           </div>
         );
       })}
-      <h1>TotalPrice: {totalprice}</h1>
+      <h1>SubTotal: {totalprice}</h1>
     </>
   );
 }
